@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/greenbg"
+    android:padding="16dp"
+    tools:context=".FamiliarColor">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <ImageButton
+            android:id="@+id/close_button"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/x" />
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="75dp"
+            android:background="@drawable/logo" />
+    </LinearLayout>
+
+    <!-- title-->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="LET'S FAMILIARIZE THE COLORS"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:shadowColor="@color/mustard"
+        android:textStyle="bold"
+        android:shadowRadius="4"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center"
+        />
+
+    <!-- green and red -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/yellowShape"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/yellow"
+            android:contentDescription="yellow shape"/>
+
+        <ImageView
+            android:id="@+id/redShape"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/red_shape"
+            android:contentDescription="red shape"/>
+    </LinearLayout>
+
+    <!-- blue and green -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/blueShape"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/blue_shape"
+            android:contentDescription="green shape"/>
+
+        <ImageView
+            android:id="@+id/greenShape"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/green_shape"
+            android:contentDescription="green shape"/>
+    </LinearLayout>
+
+    <!-- orange -->
+    <ImageView
+        android:id="@+id/orangeShape"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/orange_shape"
+        android:contentDescription="orange shape"/>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:text="next"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:background="@drawable/button_background" />
+</LinearLayout>

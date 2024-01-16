@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkGreen">#058240</color>
+    <color name="green">#87C159</color>
+    <color name="lightBlue">#ADCACB</color>
+    <color name="lightYellow">#FEE3A2</color>
+    <color name="mustard">#F3C301</color>
+
+    <!-- for buttons -->
+    <color name="button_pressed_color">#F3C301</color>
+    <color name="button_default_color">#FEE3A2</color>
+
+</resources>

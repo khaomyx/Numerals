@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/greenbg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <ImageButton
+            android:id="@+id/close_button"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/x" />
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="75dp"
+            android:background="@drawable/logo" />
+    </LinearLayout>
+
+    <!-- instruction -->
+    <TextView
+        android:id="@+id/instructionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:shadowColor="@color/mustard"
+        android:shadowRadius="4"
+        android:text="TAP THE NUMBERS IN ORDER"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="27dp"
+        android:textStyle="bold" />
+
+    <!-- Octagon Button 1 -->
+    <Button
+        android:id="@+id/octagonButton1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_background"
+        android:onClick="onNumberButtonClick"
+        android:text="6"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <!-- Octagon Buttons 2 and 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/octagonButton2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:onClick="onNumberButtonClick"
+            android:text="8"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/octagonButton3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:onClick="onNumberButtonClick"
+            android:text="3"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <!-- Octagon Button 4 -->
+    <Button
+        android:id="@+id/octagonButton4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_background"
+        android:onClick="onNumberButtonClick"
+        android:text="10"
+        android:textSize="30dp" />
+
+    <!-- Octagon Buttons 5 and 6 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/octagonButton5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:onClick="onNumberButtonClick"
+            android:text="1"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/octagonButton6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:onClick="onNumberButtonClick"
+            android:text="5"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <!-- Octagon Button 7 -->
+    <Button
+        android:id="@+id/octagonButton7"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_background"
+        android:onClick="onNumberButtonClick"
+        android:text="7"
+        android:textSize="30dp" />
+
+    <!-- Octagon Buttons 8 and 9 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/octagonButton8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:onClick="onNumberButtonClick"
+            android:text="4"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/octagonButton9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background"
+            android:onClick="onNumberButtonClick"
+            android:text="2"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <!-- Octagon Button 10 -->
+    <Button
+        android:id="@+id/octagonButton10"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_background"
+        android:onClick="onNumberButtonClick"
+        android:text="9"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1000dp"
+        android:text="Tap the number 1" />
+
+
+</LinearLayout>

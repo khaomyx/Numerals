@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/greenbg"
+    android:padding="16dp"
+    tools:context=".IdentifyColor">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <ImageButton
+            android:id="@+id/close_button"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/x" />
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="75dp"
+            android:background="@drawable/logo" />
+    </LinearLayout>
+
+    <!-- title-->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="IDENTIFYING COLOR"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:shadowColor="@color/mustard"
+        android:textStyle="bold"
+        android:shadowRadius="4"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="25dp"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/strawberry"
+        android:layout_gravity="center"/>
+
+    <!-- instruction -->
+    <TextView
+        android:id="@+id/instructionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="WHAT IS THE COLOR OF THE FRUIT?"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:shadowColor="@color/mustard"
+        android:textStyle="bold"
+        android:shadowRadius="4"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        />
+
+    <!-- shape choices 1st row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageButton
+            android:id="@+id/redChoiceButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/red"
+            android:contentDescription="red"
+            android:onClick="onImageButtonClick"/>
+
+        <ImageButton
+            android:id="@+id/orangeChoiceButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/orange"
+            android:contentDescription="orange"
+            android:onClick="onImageButtonClick"/>
+    </LinearLayout>
+
+    <!-- shape choices 2nd row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageButton
+            android:id="@+id/yellowChoiceButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/yellow"
+            android:contentDescription="yellow"
+            android:onClick="onImageButtonClick"/>
+
+        <ImageButton
+            android:id="@+id/greenChoiceButton"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/green"
+            android:contentDescription="green"
+            android:onClick="onImageButtonClick"/>
+    </LinearLayout>
+
+</LinearLayout>
